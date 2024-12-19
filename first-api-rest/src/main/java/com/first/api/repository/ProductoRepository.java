@@ -21,7 +21,7 @@ public class ProductoRepository {
     //Buscar un producto
     public Producto findById(int id){
         for(int i = 0;i < productos.size();i++){
-            if(productos.get(i).getId() == id){
+            if(productos.get(i).getId()== id){
                 return productos.get(i);
             }
         }
