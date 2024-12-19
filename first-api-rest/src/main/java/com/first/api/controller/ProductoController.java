@@ -30,6 +30,11 @@ public class ProductoController {
         return productoService.getProductos();
     }
 
+    @GetMapping("/nombres")
+    public String listarNombresProductos(){
+        return "Listado de nombres de productos";
+    }
+
     @GetMapping("/{id}")
     public Producto buscarProducto(@PathVariable int id){
         return productoService.getProductoById(id);
