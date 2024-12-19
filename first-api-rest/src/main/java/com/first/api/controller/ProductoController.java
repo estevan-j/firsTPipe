@@ -30,6 +30,7 @@ public class ProductoController {
         return productoService.getProductos();
     }
 
+    // this is a new controler
     @GetMapping("/nombres")
     public String listarNombresProductos(){
         return "Listado de nombres de productos";
