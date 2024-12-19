@@ -5,8 +5,6 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 public class Producto {
 
     private int id;
@@ -14,6 +12,19 @@ public class Producto {
     private int cantidad;
     private double precio;
 
+    public int getId() {
+        return id;
+    }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
 }
