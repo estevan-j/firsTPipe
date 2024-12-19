@@ -3,7 +3,6 @@ package com.first.api.model;
 import lombok.*;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class Producto {
 
@@ -11,6 +10,15 @@ public class Producto {
     private String nombre;
     private int cantidad;
     private double precio;
+
+    public Producto(int id, String nombre, int cantidad, double precio) {
+        this.id = id;
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+        this.precio = precio;
+    }
+
+
 
     public int getId() {
         return id;
